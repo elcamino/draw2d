@@ -1,4 +1,4 @@
-module github.com/llgcode/draw2d
+module github.com/elcamino/draw2d
 
 go 1.16
 
