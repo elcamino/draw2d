@@ -15,9 +15,9 @@ import (
 	"strconv"
 
 	"github.com/jung-kurt/gofpdf"
-	"github.com/llgcode/draw2d"
-	"github.com/llgcode/draw2d/draw2dbase"
-	"github.com/llgcode/draw2d/draw2dkit"
+	"github.com/elcamino/draw2d"
+	"github.com/elcamino/draw2d/draw2dbase"
+	"github.com/elcamino/draw2d/draw2dkit"
 )
 
 const (

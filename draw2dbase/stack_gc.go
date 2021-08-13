@@ -8,7 +8,7 @@ import (
 	"image"
 	"image/color"
 
-	"github.com/llgcode/draw2d"
+	"github.com/elcamino/draw2d"
 
 	"github.com/golang/freetype/truetype"
 )

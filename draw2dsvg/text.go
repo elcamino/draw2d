@@ -3,7 +3,7 @@ package draw2dsvg
 
 import (
 	"github.com/golang/freetype/truetype"
-	"github.com/llgcode/draw2d"
+	"github.com/elcamino/draw2d"
 	"golang.org/x/image/math/fixed"
 )
 

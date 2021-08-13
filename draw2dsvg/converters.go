@@ -7,7 +7,7 @@ import (
 	"bytes"
 	"encoding/base64"
 	"fmt"
-	"github.com/llgcode/draw2d"
+	"github.com/elcamino/draw2d"
 	"image"
 	"image/color"
 	"image/png"
