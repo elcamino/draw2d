@@ -14,8 +14,6 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/golang/freetype/truetype"
-
 	"github.com/jung-kurt/gofpdf"
 	"github.com/llgcode/draw2d"
 	"github.com/llgcode/draw2d/draw2dbase"
@@ -260,8 +258,13 @@ func (gc *GraphicContext) SetFillColor(c color.Color) {
 
 // SetFont is unsupported by the pdf graphic context, use SetFontData
 // instead.
-func (gc *GraphicContext) SetFont(font *truetype.Font) {
+func (gc *GraphicContext) SetFont(name, weight string, size float64) {
+	gc.pdf.SetFont(name, weight, size)
 	// TODO: what to do with this api conflict between draw2d and gofpdf?!
+}
+
+func (gc *GraphicContext) AddFont(name, path string) {
+	gc.pdf.AddUTF8Font(name, "", path)
 }
 
 // SetFontData sets the current font used to draw text. Always use
